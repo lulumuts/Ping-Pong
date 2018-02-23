@@ -1,4 +1,5 @@
 //back-end work
+
 $(document).ready(function() {
 
   var number = parseInt("#enter");
@@ -14,7 +15,8 @@ $(document).ready(function() {
     return number
   }
 });
-//front-end response
+//front-end
+
 $(document).ready(function() {
   $("button.PING").click(function(){
     var response = $("ul").append("<li>number</li>");
