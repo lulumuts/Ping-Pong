@@ -17,7 +17,7 @@ $(document).ready(function() {
 //front-end response
 $(document).ready(function() {
   $("button.PING").click(function(){
-    var response = $("ul").prepend("<li></li>");
+    var response = $("ul").append("<li>number</li>");
 
     });
   });
