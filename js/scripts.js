@@ -1,19 +1,23 @@
 //back-end work
-function myFunction() {
-  var x, text;
+$(document).ready(function() {
 
-  x = document.getElementById('enter').value;
+  var number = parseInt("#enter");
+  // number = document.getElementById('enter').value;
 
-  if (isNan(x) || x === 3) {
+  if ( number % 3 === 0) {
     text = "ping";
-  } else {
+  } else if (number % 5 === 0){
     text = "pong";
+  } else if (number % 15 === 0){
+    text = "pingpong";
+  } else {
+    return number
   }
-
+});
 //front-end response
 $(document).ready(function() {
   $("button.PING").click(function(){
-    var response = $("ul").prepend("<li>text</li>");
+    var response = $("ul").prepend("<li></li>");
 
     });
   });
