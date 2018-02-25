@@ -1,9 +1,21 @@
 //back-end work
-
-$(document).ready(function() {
-
-  var number = parseInt("#enter");
-  // number = document.getElementById('enter').value;
+// var myArr = ["A", "B", "C", "D"];
+//
+// $(document).ready(function() {
+//
+//   function pushData()
+//   {
+//     var enter = document.getElementById('enter').value;
+//      myArr.push(enter);
+//      var ulval = "";
+//      for(i = 0; i < myArr.length; i++)
+//      {
+//        ulval = ulval + myArr[i] + "<br/>";
+//      }
+//
+//      document.getElementById('response').innerHTML =ulval;
+//
+  number = document.getElementById('enter').value;
 
   if ( number % 3 === 0) {
     text = "ping";
@@ -14,13 +26,15 @@ $(document).ready(function() {
   } else {
     return number
   }
-});
+//
+// });
 //front-end
 
 $(document).ready(function() {
   $("button.PING").click(function(){
-    var response = $("ul").append("<li>number</li>");
 
+    var response = $("ul").append("<li>number</li>").val();
+    console.log();
     });
   });
 
