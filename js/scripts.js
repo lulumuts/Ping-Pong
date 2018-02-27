@@ -15,17 +15,25 @@
 //
 //      document.getElementById('response').innerHTML =ulval;
 //
-  number = document.getElementById('enter').value;
+  var number = function(display){
+    for(i=1; i<=display; i++){
 
-  if ( number % 3 === 0) {
-    text = "ping";
-  } else if (number % 5 === 0){
-    text = "pong";
-  } else if (number % 15 === 0){
-    text = "pingpong";
+
+  if ( i % 3 === 0) {
+   $("#enter").append("<li>" + "ping" + "</>")
+   return "ping";
+  } else if (i % 5 === 0){
+   $("#enter").append("<li>" + "pong" + "</>")
+   return "pong";
+  } else if (i % 15 === 0){
+   $("#enter").append("<li>"+"pingpong"+ "</>")
+   return "pingpong";
   } else {
-    return number
+   $("#enter").append("<li>"+ i + "</>");
+
   }
+}
+};
 //
 // });
 //front-end
